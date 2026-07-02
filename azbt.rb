@@ -5,21 +5,21 @@
 class Azbt < Formula
   desc "TUI for managing Azure Bastion tunnels"
   homepage "https://github.com/chrisvfabio/az-bastion-tunnel"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chrisvfabio/az-bastion-tunnel/releases/download/v0.2.0/az-bastion-tunnel_darwin_amd64.tar.gz"
-      sha256 "f8220b2ee47291d64ffe960989e9f7b5376ac83930cd08cca53b9a402d7481cd"
+      url "https://github.com/chrisvfabio/az-bastion-tunnel/releases/download/v0.2.1/az-bastion-tunnel_darwin_amd64.tar.gz"
+      sha256 "c1a7c459301831f350bbc8e37453bddef9d79195877226f2385ae228f0cf48f7"
 
       define_method(:install) do
         bin.install "azbt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chrisvfabio/az-bastion-tunnel/releases/download/v0.2.0/az-bastion-tunnel_darwin_arm64.tar.gz"
-      sha256 "bdd4338986291be9c833f6f54899c125033051446f9872290b9659528832114d"
+      url "https://github.com/chrisvfabio/az-bastion-tunnel/releases/download/v0.2.1/az-bastion-tunnel_darwin_arm64.tar.gz"
+      sha256 "157dba8fc2ff77b7b891e17a6d46eaff37117378ea2d8b2b76be0d6af1682d61"
 
       define_method(:install) do
         bin.install "azbt"
@@ -29,15 +29,15 @@ class Azbt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chrisvfabio/az-bastion-tunnel/releases/download/v0.2.0/az-bastion-tunnel_linux_amd64.tar.gz"
-      sha256 "48bd9ffd3f9a07f4dd02f0b618c6babd5cf1d1e74a02c7af9ff01af07c6b2ca1"
+      url "https://github.com/chrisvfabio/az-bastion-tunnel/releases/download/v0.2.1/az-bastion-tunnel_linux_amd64.tar.gz"
+      sha256 "a7f4bd6fdaa14fc383c2ccfe8b8a2eaee456eec3d9b7546745a604e4901244e5"
       define_method(:install) do
         bin.install "azbt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chrisvfabio/az-bastion-tunnel/releases/download/v0.2.0/az-bastion-tunnel_linux_arm64.tar.gz"
-      sha256 "e9a265e90e2c935a17ddae469c95ea36fbf693a2163ce7e71fa37e2c49d35241"
+      url "https://github.com/chrisvfabio/az-bastion-tunnel/releases/download/v0.2.1/az-bastion-tunnel_linux_arm64.tar.gz"
+      sha256 "f9fb143ba43a71502e2c2f5006e1aabf16726497912844bcf41b85a7ba5b50c2"
       define_method(:install) do
         bin.install "azbt"
       end
